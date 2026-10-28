@@ -57,9 +57,9 @@
 <p class="lang"><a href="#es">Leer en español</a></p>
 
 <h1>Loica — Privacy Policy</h1>
-<p class="meta">Effective date: October 19, 2026</p>
+<p class="meta">Effective date: October 28, 2026</p>
 
-<p class="summary"><strong>In short:</strong> Loica does not collect, send or share any information about you. Everything you record stays on your Mac, and the app has no access to the internet.</p>
+<p class="summary"><strong>In short:</strong> Loica does not collect any information about you, and we cannot see what you record. Your data stays on your Mac. If you choose to turn on the optional iCloud sync (it is off by default), Loica also keeps a copy in your own private iCloud account so your devices can share it.</p>
 
 <h2>1. Who we are</h2>
 <p>Loica is a macOS menu bar app that tracks your time by client, project and task. It is developed by Guillermo Rojas, operating as GuiSoft (“we”, “us”). You can reach us at <a href="mailto:guisoft.loica@proton.me">guisoft.loica@proton.me</a>.</p>
@@ -72,42 +72,52 @@
   <li>task names, start and end times, and whether a task is billable;</li>
   <li>your preferences (language, daily goal, appearance and similar settings).</li>
 </ul>
-<p>This information is kept only on your Mac: in files inside the app’s own protected folder (with a backup copy next to them) and in the app’s preferences. It is never sent to us or to anyone else, and we cannot see it.</p>
+<p>This information is kept on your Mac: in files inside the app’s own protected folder (with a backup copy next to them) and in the app’s preferences. It is not sent anywhere unless you turn on iCloud sync (section 4), which also stores a copy of your clients, projects, tasks and daily goals in your iCloud account. It never reaches us, and we cannot see it.</p>
 
 <h2>3. What we collect</h2>
-<p><strong>Nothing.</strong> Loica has no accounts, no analytics, no crash reporting, no advertising, no tracking and no third-party code that gathers data. The app runs in the macOS App Sandbox with network access turned off, so it does not connect to the internet at all.</p>
+<p><strong>Nothing.</strong> Loica has no accounts, no analytics, no crash reporting, no advertising, no tracking and no third-party code that gathers data. The app runs in the macOS App Sandbox with network access turned off, so Loica itself does not connect to the internet. (The optional iCloud sync described in section 4 is carried out by macOS’s own iCloud service, not by Loica.)</p>
 
-<h2>4. Your Mac’s activity</h2>
+<h2>4. Optional iCloud sync</h2>
+<p>Since version 1.4.0, Loica can sync your data between your devices using iCloud. <strong>It is off by default</strong>: it only starts if you turn on “Sync with iCloud” in the app’s iCloud screen (right-click the menu bar icon, then iCloud).</p>
+<ul>
+  <li><strong>What is synced:</strong> your tasks (including one that is still running), clients, projects and daily goals. App settings such as language or appearance are not synced.</li>
+  <li><strong>Where it goes:</strong> to the private database of your own iCloud account, using Apple’s CloudKit. It counts toward your iCloud storage. Only you, signed in with your Apple Account, can read it. We have no access to it and cannot see it, and we run no server of our own.</li>
+  <li><strong>Who transfers it:</strong> the transfer is done by macOS’s iCloud service, not by Loica. Apple’s own privacy policy applies to iCloud.</li>
+  <li><strong>Before the first sync,</strong> Loica saves a backup copy of your data files on your Mac and, if there is already data in iCloud (for example from another device), asks you what to do with it.</li>
+  <li><strong>Turning it off:</strong> switching it off stops syncing and deletes nothing, neither on your Mac nor in iCloud. “Delete iCloud data…” in the same screen removes everything Loica stored in your iCloud and turns sync off; the data on your Mac is not touched.</li>
+</ul>
+
+<h2>5. Your Mac’s activity</h2>
 <ul>
   <li><strong>Idle detection.</strong> To offer to pause the timer when you step away, Loica asks macOS how many seconds have passed since your last keyboard or mouse activity. It reads that single number only. It never sees or records what you type, click or view, and it does not keep the value.</li>
   <li><strong>Clicks outside the window.</strong> Loica notices when you click elsewhere on screen only so it can close its popover. The click is not recorded or stored.</li>
   <li><strong>Launch at login.</strong> If you turn this on, Loica asks macOS to open it when you sign in. You can turn it off at any time.</li>
 </ul>
 
-<h2>5. Files you export or import</h2>
+<h2>6. Files you export or import</h2>
 <p>You can export your data as CSV, Excel (XLSX) or PDF files, and make or restore a JSON backup. These files are saved to, or read from, the location you choose in the macOS save or open dialog. Loica does not upload them. Once a file leaves Loica, for example when you email it to a client, you decide who sees it.</p>
 
-<h2>6. Purchases and subscriptions</h2>
+<h2>7. Purchases and subscriptions</h2>
 <p>Loica is free to use with limits on the number of clients and projects. You can remove the limits with an annual subscription or a one-time lifetime purchase. Payments are handled entirely by Apple through the App Store. We never receive your payment details, your name or your email address. Loica only asks Apple, through StoreKit, whether you currently have an active plan, and keeps the result (Free, Annual or Lifetime) on your Mac so the app can show the right screen quickly.</p>
 <p>You can manage or cancel a subscription in your Apple Account settings. Apple’s own privacy policy applies to purchases.</p>
 <p>The “Terms of Use”, “Privacy Policy” and “Manage” links in the app open in your web browser or in the App Store. Those sites have their own policies.</p>
 
-<h2>7. How long data is kept, and how to delete it</h2>
-<p>Your data stays on your Mac until you delete it. You can delete clients, projects and tasks inside Loica. To remove everything, quit Loica, move the app to the Trash and delete its data folder, <code>~/Library/Containers/com.guisoft.TaskTracker</code>. Backups and exports you saved yourself are separate files that you can delete like any other.</p>
+<h2>8. How long data is kept, and how to delete it</h2>
+<p>Your data stays on your Mac until you delete it. You can delete clients, projects and tasks inside Loica. To remove everything, quit Loica, move the app to the Trash and delete its data folder, <code>~/Library/Containers/com.guisoft.TaskTracker</code>. If you used iCloud sync, first use “Delete iCloud data…” in the iCloud screen to remove the copy in iCloud. While sync is on, anything you delete in Loica is also deleted on your other devices. Backups and exports you saved yourself are separate files that you can delete like any other.</p>
 
-<h2>8. Your rights</h2>
-<p>Because all of your data is on your own Mac, you already have full access to it and full control over it: you can see it in the app, export it, correct it and delete it. We hold no copy of it, so we cannot access, correct or delete it for you.</p>
+<h2>9. Your rights</h2>
+<p>Because all of your data is on your own Mac and, if you turn on sync, in your own iCloud account, you already have full access to it and full control over it: you can see it in the app, export it, correct it and delete it. We hold no copy of it, so we cannot access, correct or delete it for you.</p>
 
-<h2>9. Children</h2>
+<h2>10. Children</h2>
 <p>Loica is a general productivity tool and is not directed at children. Because it collects no information from anyone, it collects none from children.</p>
 
-<h2>10. Security</h2>
-<p>Your data is protected by the macOS App Sandbox and by your Mac’s own security, such as your account password and FileVault disk encryption, which we recommend turning on. Backups and exports you create are yours to protect.</p>
+<h2>11. Security</h2>
+<p>Your data is protected by the macOS App Sandbox and by your Mac’s own security, such as your account password and FileVault disk encryption, which we recommend turning on. Data you sync lives in your iCloud account, protected by Apple’s iCloud security and by your Apple Account credentials. Backups and exports you create are yours to protect.</p>
 
-<h2>11. Changes to this policy</h2>
-<p>If Loica ever changes how it handles information, for example by adding sync between devices, we will update this policy before the change reaches you and change the effective date above.</p>
+<h2>12. Changes to this policy</h2>
+<p>If Loica changes how it handles information, we will update this policy before the change reaches you and change the effective date above.</p>
 
-<h2>12. Contact</h2>
+<h2>13. Contact</h2>
 <p>Questions about this policy: <a href="mailto:guisoft.loica@proton.me">guisoft.loica@proton.me</a>.</p>
 </main>
 
@@ -118,9 +128,9 @@
 <p class="lang"><a href="#en">Read in English</a></p>
 
 <h1>Loica — Política de privacidad</h1>
-<p class="meta">Fecha de entrada en vigor: 19 de octubre de 2026</p>
+<p class="meta">Fecha de entrada en vigor: 28 de octubre de 2026</p>
 
-<p class="summary"><strong>En resumen:</strong> Loica no recopila, envía ni comparte ninguna información sobre ti. Todo lo que registras se queda en tu Mac, y la app no tiene acceso a internet.</p>
+<p class="summary"><strong>En resumen:</strong> Loica no recopila ninguna información sobre ti, y nosotros no podemos ver lo que registras. Tus datos se quedan en tu Mac. Si decides activar la sincronización opcional con iCloud (viene apagada), Loica además guarda una copia en tu propia cuenta privada de iCloud para que tus dispositivos la compartan.</p>
 
 <h2>1. Quiénes somos</h2>
 <p>Loica es una app de la barra de menús de macOS que registra tu tiempo por cliente, proyecto y tarea. La desarrolla Guillermo Rojas, que opera como GuiSoft («nosotros»). Puedes escribirnos a <a href="mailto:guisoft.loica@proton.me">guisoft.loica@proton.me</a>.</p>
@@ -133,42 +143,52 @@
   <li>nombres de tareas, horas de inicio y término, y si la tarea es facturable;</li>
   <li>tus preferencias (idioma, meta diaria, apariencia y ajustes similares).</li>
 </ul>
-<p>Esta información se guarda solo en tu Mac: en archivos dentro de la carpeta protegida de la propia app (con una copia de respaldo al lado) y en las preferencias de la app. Nunca se envía a nosotros ni a nadie más, y no podemos verla.</p>
+<p>Esta información se guarda en tu Mac: en archivos dentro de la carpeta protegida de la propia app (con una copia de respaldo al lado) y en las preferencias de la app. No se envía a ningún sitio salvo que actives la sincronización con iCloud (sección 4), que además guarda una copia de tus clientes, proyectos, tareas y metas diarias en tu cuenta de iCloud. Nunca nos llega a nosotros, y no podemos verla.</p>
 
 <h2>3. Qué recopilamos</h2>
-<p><strong>Nada.</strong> Loica no tiene cuentas, ni analíticas, ni informes de fallos, ni publicidad, ni rastreo, ni código de terceros que recoja datos. La app funciona dentro del App Sandbox de macOS con el acceso a la red desactivado, así que no se conecta a internet en absoluto.</p>
+<p><strong>Nada.</strong> Loica no tiene cuentas, ni analíticas, ni informes de fallos, ni publicidad, ni rastreo, ni código de terceros que recoja datos. La app funciona dentro del App Sandbox de macOS con el acceso a la red desactivado, así que Loica por sí misma no se conecta a internet. (La sincronización opcional con iCloud de la sección 4 la realiza el propio servicio de iCloud de macOS, no Loica.)</p>
 
-<h2>4. La actividad de tu Mac</h2>
+<h2>4. Sincronización opcional con iCloud</h2>
+<p>Desde la versión 1.4.0, Loica puede sincronizar tus datos entre tus dispositivos mediante iCloud. <strong>Viene apagada</strong>: solo empieza si activas «Sincronizar con iCloud» en la pantalla de iCloud de la app (clic derecho en el icono de la barra de menús y luego iCloud).</p>
+<ul>
+  <li><strong>Qué se sincroniza:</strong> tus tareas (incluida la que sigue en curso), clientes, proyectos y metas diarias. Los ajustes de la app, como el idioma o la apariencia, no se sincronizan.</li>
+  <li><strong>Adónde va:</strong> a la base de datos privada de tu propia cuenta de iCloud, mediante CloudKit de Apple. Ocupa espacio de tu almacenamiento de iCloud. Solo tú, con tu cuenta de Apple, puedes leerla. Nosotros no tenemos acceso a ella ni podemos verla, y no operamos ningún servidor propio.</li>
+  <li><strong>Quién la transfiere:</strong> la transferencia la hace el servicio de iCloud de macOS, no Loica. A iCloud se le aplica la política de privacidad de Apple.</li>
+  <li><strong>Antes del primer sync,</strong> Loica guarda en tu Mac una copia de respaldo de tus archivos de datos y, si ya hay datos en iCloud (por ejemplo, de otro dispositivo), te pregunta qué hacer con ellos.</li>
+  <li><strong>Apagarla:</strong> al apagarla se detiene la sincronización y no se borra nada, ni en tu Mac ni en iCloud. «Borrar los datos de iCloud…», en la misma pantalla, elimina todo lo que Loica guardó en tu iCloud y apaga el sync; los datos de tu Mac no se tocan.</li>
+</ul>
+
+<h2>5. La actividad de tu Mac</h2>
 <ul>
   <li><strong>Detección de inactividad.</strong> Para ofrecerte pausar el cronómetro cuando te alejas, Loica le pregunta a macOS cuántos segundos han pasado desde tu última actividad con el teclado o el ratón. Lee solo ese número. Nunca ve ni registra lo que escribes, pulsas o miras, y no guarda el valor.</li>
   <li><strong>Clics fuera de la ventana.</strong> Loica se entera de que pulsas en otra parte de la pantalla solo para cerrar su ventana emergente. El clic no se registra ni se guarda.</li>
   <li><strong>Abrir al iniciar sesión.</strong> Si lo activas, Loica le pide a macOS que la abra cuando inicias sesión. Puedes desactivarlo cuando quieras.</li>
 </ul>
 
-<h2>5. Archivos que exportas o importas</h2>
+<h2>6. Archivos que exportas o importas</h2>
 <p>Puedes exportar tus datos como archivos CSV, Excel (XLSX) o PDF, y hacer o restaurar un respaldo JSON. Estos archivos se guardan en, o se leen desde, el lugar que eliges en el cuadro de guardar o abrir de macOS. Loica no los sube a ningún sitio. Cuando un archivo sale de Loica, por ejemplo al enviarlo por correo a un cliente, tú decides quién lo ve.</p>
 
-<h2>6. Compras y suscripciones</h2>
+<h2>7. Compras y suscripciones</h2>
 <p>Loica se puede usar gratis con un límite de clientes y proyectos. Puedes quitar los límites con una suscripción anual o con una compra única de por vida. Los pagos los gestiona por completo Apple a través de la App Store. Nunca recibimos tus datos de pago, tu nombre ni tu correo. Loica solo le pregunta a Apple, mediante StoreKit, si tienes un plan activo, y guarda el resultado (Gratis, Anual o De por vida) en tu Mac para mostrar enseguida la pantalla correcta.</p>
 <p>Puedes gestionar o cancelar una suscripción en los ajustes de tu cuenta de Apple. A las compras se les aplica la política de privacidad de Apple.</p>
 <p>Los enlaces «Términos de uso», «Política de privacidad» y «Gestionar» de la app se abren en tu navegador o en la App Store. Esos sitios tienen sus propias políticas.</p>
 
-<h2>7. Cuánto tiempo se guardan los datos y cómo borrarlos</h2>
-<p>Tus datos permanecen en tu Mac hasta que los borres. Puedes borrar clientes, proyectos y tareas dentro de Loica. Para eliminarlo todo, cierra Loica, mueve la app a la Papelera y borra su carpeta de datos, <code>~/Library/Containers/com.guisoft.TaskTracker</code>. Los respaldos y exportaciones que guardaste tú son archivos aparte que puedes borrar como cualquier otro.</p>
+<h2>8. Cuánto tiempo se guardan los datos y cómo borrarlos</h2>
+<p>Tus datos permanecen en tu Mac hasta que los borres. Puedes borrar clientes, proyectos y tareas dentro de Loica. Para eliminarlo todo, cierra Loica, mueve la app a la Papelera y borra su carpeta de datos, <code>~/Library/Containers/com.guisoft.TaskTracker</code>. Si usaste la sincronización con iCloud, antes usa «Borrar los datos de iCloud…» en la pantalla de iCloud para quitar la copia que está en iCloud. Mientras el sync está encendido, lo que borras en Loica también se borra en tus otros dispositivos. Los respaldos y exportaciones que guardaste tú son archivos aparte que puedes borrar como cualquier otro.</p>
 
-<h2>8. Tus derechos</h2>
-<p>Como todos tus datos están en tu propio Mac, ya tienes acceso y control total sobre ellos: puedes verlos en la app, exportarlos, corregirlos y borrarlos. Nosotros no tenemos ninguna copia, así que no podemos acceder a ellos, corregirlos ni borrarlos por ti.</p>
+<h2>9. Tus derechos</h2>
+<p>Como todos tus datos están en tu propio Mac y, si activas la sincronización, en tu propia cuenta de iCloud, ya tienes acceso y control total sobre ellos: puedes verlos en la app, exportarlos, corregirlos y borrarlos. Nosotros no tenemos ninguna copia, así que no podemos acceder a ellos, corregirlos ni borrarlos por ti.</p>
 
-<h2>9. Menores de edad</h2>
+<h2>10. Menores de edad</h2>
 <p>Loica es una herramienta general de productividad y no está dirigida a menores. Como no recopila información de nadie, tampoco la recopila de menores.</p>
 
-<h2>10. Seguridad</h2>
-<p>Tus datos están protegidos por el App Sandbox de macOS y por la propia seguridad de tu Mac, como la contraseña de tu cuenta y el cifrado de disco FileVault, que recomendamos activar. Los respaldos y las exportaciones que crees los proteges tú.</p>
+<h2>11. Seguridad</h2>
+<p>Tus datos están protegidos por el App Sandbox de macOS y por la propia seguridad de tu Mac, como la contraseña de tu cuenta y el cifrado de disco FileVault, que recomendamos activar. Los datos que sincronizas viven en tu cuenta de iCloud, protegidos por la seguridad de iCloud de Apple y por las credenciales de tu cuenta de Apple. Los respaldos y las exportaciones que crees los proteges tú.</p>
 
-<h2>11. Cambios en esta política</h2>
-<p>Si Loica cambia alguna vez la forma en que trata la información, por ejemplo al añadir sincronización entre dispositivos, actualizaremos esta política antes de que el cambio te llegue y cambiaremos la fecha de arriba.</p>
+<h2>12. Cambios en esta política</h2>
+<p>Si Loica cambia la forma en que trata la información, actualizaremos esta política antes de que el cambio te llegue y cambiaremos la fecha de arriba.</p>
 
-<h2>12. Contacto</h2>
+<h2>13. Contacto</h2>
 <p>Preguntas sobre esta política: <a href="mailto:guisoft.loica@proton.me">guisoft.loica@proton.me</a>.</p>
 </main>
 
